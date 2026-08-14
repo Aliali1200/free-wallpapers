@@ -1,4 +1,6 @@
-document.querySelector(".btn").addEventListener("click", function(e) {
-    e.preventDefault();
-    alert("سيتم تحويلك لتحميل الخلفيات بعد إكمال العرض.");
+document.querySelector(".btn").addEventListener("click", function () {
+  window.location.href = "https://appsave.one/cl/v/m5ner4";
 });
+    
+    
+
