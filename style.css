@@ -1,34 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fa;
+  color: #172033;
+}
+
+.hero {
+  padding: 35px 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #087ff5, #635bff);
+  color: white;
+}
+
+.phone {
+  font-size: 42px;
+}
+
+.hero h1 {
+  margin: 8px 0;
+  font-size: 38px;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.95;
 }
 
 .container {
-    margin-top: 80px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 22px 15px 45px;
 }
 
-h1 {
-    color: #0077ff;
+.intro {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 22px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
 }
 
-p {
-    color: #555;
-    font-size: 18px;
+.intro strong {
+  display: block;
+  font-size: 19px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background: #0077ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
+.intro span {
+  display: block;
+  margin-top: 7px;
+  color: #667085;
 }
 
-.btn:hover {
-    background: #005ecc;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  display: block;
+}
+
+.card h2 {
+  margin: 13px;
+  font-size: 17px;
+}
+
+.download-btn {
+  width: calc(100% - 26px);
+  margin: 0 13px 14px;
+  padding: 13px;
+  border: 0;
+  border-radius: 12px;
+  background: #087ff5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.download-btn:disabled {
+  background: #aeb7c4;
+  cursor: not-allowed;
+}
+
+.coming-soon {
+  text-align: center;
+}
+
+.coming-soon > div {
+  aspect-ratio: 9 / 16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8edf3;
+  font-size: 45px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #667085;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 31px;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+
+  .card h2 {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px 10px 30px;
+  }
 }
