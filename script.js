@@ -1,6 +1,5 @@
-document.querySelector(".btn").addEventListener("click", function () {
-  window.location.href = "https://appsave.store/cl/i/m5ner4";
+document.querySelectorAll(".download-btn").forEach(function(button) {
+  button.addEventListener("click", function() {
+    window.location.href = "https://appsave.store/cl/v/m5ner4";
+  });
 });
-    
-    
-
